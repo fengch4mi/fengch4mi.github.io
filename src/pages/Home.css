@@ -8,9 +8,7 @@
   min-height: calc(100vh - 100px);
   position: relative;
   width: 100%;
-  background:
-    radial-gradient(900px 450px at 5% -10%, var(--accent-soft) 0%, transparent 60%),
-    radial-gradient(800px 400px at 95% 10%, var(--accent-warm-soft) 0%, transparent 55%);
+  background: none;
 }
 
 .hero-content {

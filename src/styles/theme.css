@@ -31,6 +31,10 @@
   --accent-warm: #c7682b;
   --accent-warm-soft: #f4e1d4;
   --overlay-bg: rgba(24, 32, 37, 0.55);
+  --hero-gradient:
+    radial-gradient(1400px 640px at 8% -10%, color-mix(in srgb, var(--accent-soft) 70%, transparent) 0%, transparent 66%),
+    radial-gradient(1200px 640px at 95% 5%, color-mix(in srgb, var(--accent-warm-soft) 70%, transparent) 0%, transparent 62%),
+    radial-gradient(900px 520px at 50% 0%, color-mix(in srgb, var(--accent-color) 20%, transparent) 0%, transparent 74%);
 }
 
 [data-theme='dark'] {
