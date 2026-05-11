@@ -66,7 +66,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router basename="/webby_porto">
+    <Router>
       <div className="App">
         <ScrollToTop />
         <Header />
