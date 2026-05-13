@@ -21,7 +21,7 @@
   pointer-events: none;
 }
 
-.App > * {
+.App > :not(.header) {
   position: relative;
   z-index: 1;
 }
