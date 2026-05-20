@@ -1,0 +1,26 @@
+/* Simple optimized image styles - no conflicts */
+
+/* Optional blur-in animation */
+img.img-loading {
+  opacity: 0;
+  filter: blur(8px);
+  transition: opacity 0.4s ease-out, filter 0.4s ease-out;
+}
+
+img.img-loaded {
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* Disable blur animation if user prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  img.img-loading {
+    filter: none;
+    opacity: 0.5;
+  }
+  
+  img.img-loading,
+  img.img-loaded {
+    transition: opacity 0.2s ease;
+  }
+}

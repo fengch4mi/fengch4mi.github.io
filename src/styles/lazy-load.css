@@ -1,0 +1,83 @@
+/* Lazy Load Image Optimizations */
+
+/* Blur effect - custom implementation */
+.lazy-load-image-background.blur {
+  filter: blur(15px);
+  transition: filter 0.4s ease-out;
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+  filter: blur(0);
+}
+
+/* Opacity effect */
+.lazy-load-image-background.opacity {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+.lazy-load-image-background.opacity.lazy-load-image-loaded {
+  opacity: 1;
+}
+
+/* Base wrapper styles */
+.lazy-load-image-background {
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Ensure images fit properly within containers */
+.lazy-load-image-background img,
+span.lazy-load-image-background > img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+
+/* Profile images - maintain aspect ratio */
+.profile-image .lazy-load-image-background,
+.profile-image span.lazy-load-image-background {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Portfolio placeholder images */
+.placeholder .lazy-load-image-background,
+.placeholder span.lazy-load-image-background {
+  width: 100%;
+  height: 100%;
+}
+
+/* Carousel images */
+.ui-carousel-item .lazy-load-image-background,
+.ui-carousel-item span.lazy-load-image-background {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* UI Project images */
+.ui-image-back .lazy-load-image-background,
+.ui-image-front .lazy-load-image-background,
+.ui-image-back span.lazy-load-image-background,
+.ui-image-front span.lazy-load-image-background {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Loading placeholder background */
+.lazy-load-image-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-secondary);
+  z-index: -1;
+}

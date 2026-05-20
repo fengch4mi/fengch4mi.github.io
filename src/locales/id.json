@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portofolio",
+    "prototype": "Prototipe",
+    "sliderPrototype": "Slider Section"
+  },
+  "home": {
+    "greeting": "Hello There!",
+    "name": "I'm Hafizh Alexander",
+    "subtitle": "A Passionate Graphic Designer Exploring User Interface Design for Game Development.",
+    "description": "An Undergraduate at Surabaya State University. Currently a Third-year Informatics Student.",
+    "moreAboutMe": "More About Me",
+    "viewCV": "View My CV",
+    "featured": {
+      "title": "Karya Pilihan",
+      "subtitle": "Showcase proyek terbaik saya",
+      "viewMore": "Lihat Proyek",
+      "viewAllWorks": "Lihat Semua Karya",
+      "stuplan": {
+        "subtitle": "Aplikasi Planner Belajar Android",
+        "description": "Aplikasi produktivitas yang dirancang untuk membantu siswa mengelola jadwal belajar dengan interface yang intuitif dan clean."
+      }
+    }
+  },
+  "about": {
+    "aboutTitle": "About Me!",
+    "whoIs": "So, Who's Hafizh Alexander?",
+    "description": [
+      "Saya adalah mahasiswa S1 Teknik Informatika di Universitas Negeri Surabaya yang memiliki hasrat besar untuk membangun produk digital yang tidak hanya andal secara performa, tetapi juga memikat secara visual.",
+      "Perjalanan karir saya berada di titik temu antara logika dan estetika. Dari sisi teknis, saya telah mengasah keahlian sebagai React & Back-End Developer melalui program intensif Dicoding Academy, di mana saya berhasil mengembangkan aplikasi web yang tangguh seperti 'LearnCheck'. Saya fasih berbicara dalam bahasa pengembang—menguasai JavaScript, Node.js, dan integrasi API.",
+      "Di saat yang sama, saya juga berkembang di dunia kreatif. Sebagai Creative Team Lead di Atlus Info Indonesia, saya mengelola strategi visual dan memimpin tim untuk mendorong lebih dari 5.000+ interaksi (engagement) setiap bulannya. Baik saat sedang melakukan debugging kode maupun merancang desain high-fidelity di Figma, tujuan saya tetap satu: menciptakan pengalaman digital yang mulus dan berorientasi pada pengguna (user-centric)."
+    ],
+    "designsMade": "Desain dibuat",
+    "projectsDone": "Proyek selesai",
+    "experienceTitle": "Pengalaman",
+    "softSkills": "Soft Skills",
+    "softSkillsList": "Kepemimpinan Tim, Komunikasi, Keterampilan Organisasi, Kerja Tim, Manajemen Waktu",
+    "expertise": "Keahlian",
+    "expertiseList": "Desain Grafis, Content Writing Level Pemula, Python Level Pemula",
+    "software": "Software",
+    "softwareList": "Adobe Photoshop, Figma, Adobe Illustrator, Python",
+    "education": "Pendidikan",
+    "degree": "Sarjana Ilmu Komputer",
+    "school": "Universitas Negeri Surabaya (UNESA)",
+    "duration": "2023 - Sekarang"
+  },
+  "portfolio": {
+    "subtitle": "Portofolio pribadi Alexander",
+    "title": "Karya Alex",
+    "socialMedia": {
+      "title": "Desain Media Sosial",
+      "subtitle": "Pekerjaan freelance saya di Atlus Info Indonesia sebagai Editor!"
+    },
+    "uiProjects": {
+      "title": "Proyek UI/UX",
+      "mainTitle": "StuPlan! - Aplikasi Planner Belajar Android",
+      "description": "Saya mendesain StuPlan!, aplikasi berbasis Android yang fokus pada kesederhanaan dan produktivitas. Keputusan desain utama meliputi",
+      "feature1": "Dashboard Intuitif: Ringkasan jadwal harian dan deadline yang akan datang untuk mengurangi beban kognitif",
+      "feature2": "Pengingat Pintar: Sistem notifikasi khusus untuk tugas dan ujian agar siswa tidak ketinggalan jadwal.",
+      "feature3": "Visualisasi Progress: Halaman Statistik khusus menggunakan grafik untuk melacak waktu belajar dan penyelesaian tugas, memotivasi pengguna untuk tetap konsisten.",
+      "moreWorks": "Karya UI Lainnya"
+    },
+    "personalWorks": {
+      "title": "Karya Personal"
+    }
+  }
+}

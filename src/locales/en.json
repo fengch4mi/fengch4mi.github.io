@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "prototype": "Prototype",
+    "sliderPrototype": "Section Slider"
+  },
+  "home": {
+    "greeting": "Hello There!",
+    "name": "I'm Hafizh Alexander",
+    "subtitle": "A Passionate Graphic Designer Exploring User Interface Design for Game Development.",
+    "description": "An Undergraduate at Surabaya State University. Currently a Third-year Informatics Student.",
+    "moreAboutMe": "More About Me",
+    "viewCV": "View My CV",
+    "featured": {
+      "title": "Featured Works",
+      "subtitle": "A showcase of my best projects",
+      "viewMore": "View Project",
+      "viewAllWorks": "View All Works",
+      "stuplan": {
+        "subtitle": "Android Study Planner App",
+        "description": "A productivity app designed to help students manage their study schedules with an intuitive and clean interface."
+      }
+    }
+  },
+  "about": {
+    "aboutTitle": "About Me!",
+    "whoIs": "So, Who's Hafizh Alexander?",
+    "description": [
+      "I am an Informatics Undergraduate at Universitas Negeri Surabaya with a passion for building digital products that look as good as they perform.",
+      "My journey sits at the intersection of logic and aesthetics. On the technical side, I have honed my skills as a React & Back-End Developer through the intensive Dicoding Academy cohort , where I built robust web applications like 'LearnCheck'. I speak the language of developers—fluent in JavaScript, Node.js, and API integration.",
+      "Simultaneously, I thrive in the creative world. As a Creative Team Lead at Atlus Info Indonesia , I manage visual strategies and lead a team to drive over 5,000+ monthly engagements. Whether I am debugging code or crafting high-fidelity designs in Figma, my goal remains the same: to create seamless, user-centric experiences."
+    ],
+    "designsMade": "Designs made",
+    "projectsDone": "Projects done",
+    "experienceTitle": "Experience",
+    "softSkills": "Soft Skills",
+    "softSkillsList": "Team Leadership, Communication, Organization Skills, Team Work, Time Management",
+    "expertise": "Expertise",
+    "expertiseList": "Graphic Design, Entry-level Content Writing, Entry-level Python",
+    "software": "Software",
+    "softwareList": "Adobe Photoshop, Figma, Adobe Illustrator, Python",
+    "education": "Education",
+    "degree": "Bachelor's Degree in Computer Science",
+    "school": "Surabaya State University (UNESA)",
+    "duration": "2023 - Present"
+  },
+  "portfolio": {
+    "subtitle": "Alexander's personalized portfolio",
+    "title": "Alex's Works",
+    "socialMedia": {
+      "title": "Social Media Designs",
+      "subtitle": "My freelance work on Atlus Info Indonesia as Editor!"
+    },
+    "uiProjects": {
+      "title": "UI/UX Projects",
+      "mainTitle": "StuPlan! - Android Study Planner App",
+      "description": "I designed StuPlan!, an Android-based application focused on simplicity and productivity. Key design decisions included",
+      "feature1": "Intuitive Dashboard: A clean summary of daily schedules and upcoming deadlines to reduce cognitive load",
+      "feature2": "Smart Reminders: Custom notification system for tasks and exams to ensure students never miss a due date.",
+      "feature3": "Progress Visualization: A dedicated Statistics Page using charts to track study time and task completion, motivating users to stay consistent.",
+      "moreWorks": "More UI Works"
+    },
+    "personalWorks": {
+      "title": "Personal Works"
+    }
+  }
+}

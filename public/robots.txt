@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fengch4mi.github.io/sitemap.xml

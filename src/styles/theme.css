@@ -1,0 +1,108 @@
+/* Dark Mode Variables */
+:root {
+  /* Light Mode Colors */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-primary: #f6f1ea;
+  --bg-secondary: #efe6da;
+  --bg-tertiary: #e2d3c1;
+  --bg-card: #fff8ef;
+  --bg-accent: #f4dcc2;
+  --bg-header: rgba(20, 30, 36, 0.9);
+  
+  --text-primary: #1b262c;
+  --text-secondary: #41535c;
+  --text-tertiary: #5b6c73;
+  --text-inverse: #ffffff;
+  
+  --border-color: #d9cbb9;
+  --shadow-sm: 0 10px 30px rgba(24, 32, 37, 0.12);
+  --shadow-md: 0 15px 40px rgba(24, 32, 37, 0.18);
+  --shadow-lg: 0 20px 40px rgba(24, 32, 37, 0.12);
+  
+  --hover-bg: #ece2d6;
+  --shadow-color: rgba(24, 32, 37, 0.12);
+  --accent-color: #1f7a74;
+  --accent-strong: #155e59;
+  --accent-soft: #dcefe8;
+  --accent-warm: #c7682b;
+  --accent-warm-soft: #f4e1d4;
+  --overlay-bg: rgba(24, 32, 37, 0.55);
+  --hero-gradient:
+    radial-gradient(1400px 640px at 8% -10%, color-mix(in srgb, var(--accent-soft) 70%, transparent) 0%, transparent 66%),
+    radial-gradient(1200px 640px at 95% 5%, color-mix(in srgb, var(--accent-warm-soft) 70%, transparent) 0%, transparent 62%),
+    radial-gradient(900px 520px at 50% 0%, color-mix(in srgb, var(--accent-color) 20%, transparent) 0%, transparent 74%);
+}
+
+[data-theme='dark'] {
+  /* Dark Mode Colors */
+  --bg-primary: #101417;
+  --bg-secondary: #151c20;
+  --bg-tertiary: #1b242a;
+  --bg-card: #11181c;
+  --bg-accent: #203038;
+  --bg-header: rgba(10, 14, 16, 0.92);
+  
+  --text-primary: #ecf2f3;
+  --text-secondary: #b3c0c5;
+  --text-tertiary: #8ea0a6;
+  --text-inverse: #0f1518;
+  
+  --border-color: #2b3a41;
+  --shadow-sm: 0 10px 30px rgba(3, 6, 8, 0.6);
+  --shadow-md: 0 15px 40px rgba(3, 6, 8, 0.7);
+  --shadow-lg: 0 20px 40px rgba(3, 6, 8, 0.8);
+  
+  --hover-bg: #1e2730;
+  --shadow-color: rgba(3, 6, 8, 0.6);
+  --accent-color: #3fb7a9;
+  --accent-strong: #2a8f84;
+  --accent-soft: #163038;
+  --accent-warm: #e08b4c;
+  --accent-warm-soft: #2b1f18;
+  --overlay-bg: rgba(3, 6, 8, 0.7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+@font-face {
+  font-family: 'Freesans';
+  src: url('/font/FreeSans.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Freesans';
+  src: url('/font/FreeSansBold.otf') format('opentype');
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Freesans', 'Inter', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
