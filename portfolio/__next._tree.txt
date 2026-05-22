@@ -1,0 +1,4 @@
+:HL["/_next/static/chunks/0.5op_y07chid.css","style"]
+:HL["/_next/static/chunks/0_7rhvtb2s3hd.css","style"]
+:HL["/_next/static/chunks/098ge1drjyzru.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"portfolio","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"AhvmDBGhfin5a5kra33OG"}
