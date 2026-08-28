@@ -1,0 +1,131 @@
+/* ================================================
+   TILT IMAGE COMPONENT
+   3D tilt + holographic glare for image grid items
+   ================================================ */
+
+.tilt-image-wrapper {
+  perspective: 900px;
+  overflow: visible;
+}
+
+.tilt-image-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tilt-image-inner:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+}
+
+.tilt-image-inner:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+/* The image fills the card */
+.tilt-image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+/* Holographic glare overlay */
+.tilt-glare {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 2;
+  mix-blend-mode: overlay;
+}
+
+/* Corner bracket decorations */
+.tilt-corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid var(--accent-color);
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.tilt-image-inner:hover .tilt-corner {
+  opacity: 1;
+}
+
+.tilt-corner-tl { top: 8px; left: 8px; border-right: none; border-bottom: none; }
+.tilt-corner-tr { top: 8px; right: 8px; border-left: none; border-bottom: none; }
+.tilt-corner-bl { bottom: 8px; left: 8px; border-right: none; border-top: none; }
+.tilt-corner-br { bottom: 8px; right: 8px; border-left: none; border-top: none; }
+
+/* Scan-line reveal overlay (from concept prototype) */
+.tilt-scan {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(100deg, transparent 30%, rgba(255, 107, 74, 0.82) 50%, transparent 70%);
+  background-size: 250% 100%;
+  background-position: 150% 0;
+  opacity: 0;
+  transition: opacity 0.25s ease, background-position 0.5s ease;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.tilt-scan span {
+  font-family: 'IBM Plex Mono', 'Freesans', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #14161f;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 8px 16px;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+}
+
+.tilt-image-inner:hover .tilt-scan,
+.tilt-image-inner:focus-visible .tilt-scan {
+  opacity: 1;
+  background-position: -50% 0;
+}
+
+/* ================================================
+   REDUCED MOTION
+   ================================================ */
+@media (prefers-reduced-motion: reduce) {
+  .tilt-image-inner {
+    transition: none !important;
+    transform: none !important;
+  }
+
+  .tilt-glare {
+    display: none;
+  }
+
+  .tilt-scan {
+    transition: opacity 0.15s ease;
+    background: rgba(255, 107, 74, 0.65);
+    background-size: 100% 100%;
+    background-position: 0 0;
+  }
+}

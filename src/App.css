@@ -5,6 +5,7 @@
   flex-direction: column;
   position: relative;
   isolation: isolate;
+  overflow-x: hidden;
 }
 
 .App::before {

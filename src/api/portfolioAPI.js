@@ -50,6 +50,24 @@ export const portfolioAPI = {
     });
   },
 
+  // Get general projects (for Home & general showcase)
+  getProjects: () => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve([
+          {
+            id: 'stuplan',
+            title: 'StuPlan!',
+            description: 'Android-based study planner application focused on simplicity and productivity. Features schedule management, smart reminders, and study statistics.',
+            tags: ['Android', 'UI/UX', 'Figma', 'Kotlin'],
+            link: '/portfolio#ui-projects',
+            isExternal: false
+          }
+        ]);
+      }, 100);
+    });
+  },
+
   // Get social media designs
   getSocialMediaDesigns: () => {
     return new Promise((resolve) => {

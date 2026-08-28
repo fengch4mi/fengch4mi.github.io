@@ -8,6 +8,9 @@ const nextConfig = {
   basePath,
   assetPrefix: basePath ? `${basePath}/` : '',
   reactCompiler: true,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

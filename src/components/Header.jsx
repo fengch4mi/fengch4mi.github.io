@@ -1,76 +1,44 @@
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import ThemeToggle from './ThemeToggle';
-function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t, i18n } = useTranslation();
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Portfolio', href: '/portfolio' }
+];
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+export default function Header() {
+  const pathname = usePathname();
 
   return (
-    <header className="header">
-      <nav className="nav-container">
-        <div className="hamburger" onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-          <li>
-            <NavLink 
-              to="/about" 
-              className={({ isActive }) => isActive ? 'active' : ''}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t('nav.about')}
-            </NavLink>
-          </li>
-          <li>
-            <NavLink 
-              to="/portfolio" 
-              className={({ isActive }) => isActive ? 'active' : ''}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t('nav.portfolio')}
-            </NavLink>
-          </li>
-          <li>
-            <NavLink 
-              to="/" 
-              className={({ isActive }) => isActive ? 'active' : ''}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t('nav.home')}
-            </NavLink>
-          </li>
-        </ul>
-        <div className="header-actions">
-          <ThemeToggle />
-          <div className="language-switcher">
-            <button 
-              onClick={() => changeLanguage('id')} 
-              className={i18n.language === 'id' ? 'active' : ''}
-            >
-              ID
-            </button>
-            <button 
-              onClick={() => changeLanguage('en')}
-              className={i18n.language === 'en' ? 'active' : ''}
-            >
-              EN
-            </button>
+    <header className="site-header">
+      <nav className="site-nav" aria-label="Primary">
+        <Link href="/" className="brand-name">
+          Hafizh Alexander
+        </Link>
+
+        <div className="nav-right">
+          <ul className="nav-links">
+            {navItems.map((item) => (
+              <li key={item.label}>
+                <Link
+                  href={item.href}
+                  aria-current={pathname === item.href ? 'page' : undefined}
+                  className={`nav-link${pathname === item.href ? ' active' : ''}`}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="nav-extras">
+            <ThemeToggle />
           </div>
         </div>
       </nav>
     </header>
   );
 }
-
-export default Header;
